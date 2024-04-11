@@ -1,15 +1,26 @@
+'use client'
+
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import {styled} from "@/shared/globalStyles";
 import {FC, HTMLAttributes} from "react";
+import {useBasket} from "@/stores/basket";
+import Link from "next/link";
 
 interface IndexInterface extends HTMLAttributes<HTMLButtonElement>{
-    basketItems?: number,
+
 }
 
 
-const Index: FC<IndexInterface> = ({ basketItems, ...props}) => {
+
+const Index: FC<IndexInterface> = ({...props}) => {
+
+    useBasket((state) => state.articles)
+    const articlesLen = useBasket((state) => state.calculateArticles)()
+
+
     return (
-        <Button {...props}>
+        // @ts-ignore
+        <LinkStyle href={'/basket'} {...props}>
 
             <BasketWrapperIcon className="basket__wrapper__icon">
                 <ShoppingCartOutlinedIcon className='basket__icon' fontSize='medium'/>
@@ -17,18 +28,18 @@ const Index: FC<IndexInterface> = ({ basketItems, ...props}) => {
 
             <BasketSpan>Корзина</BasketSpan>
 
-            {basketItems != undefined &&
+            {articlesLen != 0 &&
                 <Items>
                     <ItemsWrapper className="basket__items__wrapper">
-                        {basketItems}
+                        {articlesLen}
                      </ItemsWrapper>
                 </Items>}
 
-        </Button>
+        </LinkStyle>
     );
 };
 
-const Button = styled('button', {
+const LinkStyle = styled(Link, {
     backgroundColor: '$greenLight',
     borderRadius: '15px',
     display: 'flex',

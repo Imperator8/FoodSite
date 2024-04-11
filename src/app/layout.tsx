@@ -1,6 +1,9 @@
 import type {Metadata} from "next";
 import {Inter} from "next/font/google";
-import {getCssText, setupGlobalStyle} from "../shared/globalStyles";
+import {getCssText, setupStyle} from "@/shared/globalStyles";
+import Footer from "@/widgets/Footer";
+import React from "react";
+import Header from "@/widgets/Header";
 
 const inter = Inter({subsets: ["latin"]});
 
@@ -10,15 +13,19 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({children}: Readonly<{children: React.ReactNode; }>) {
-    setupGlobalStyle()
+    setupStyle()
     return (
-        <html lang="en">
+        <html lang="ru">
             <head>
                 <style id="stitches" dangerouslySetInnerHTML={{__html: getCssText()}}/>
             </head>
             <body className={inter.className}>
                 <div className='wrapper'>
+                    <Header/>
+
                     {children}
+
+                    <Footer/>
                 </div>
             </body>
         </html>

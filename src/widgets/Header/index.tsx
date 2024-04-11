@@ -5,32 +5,35 @@ import HeaderMobileBurger from "@/widgets/Header/HeaderMobileBurger";
 import HeaderAddressInput from "@/widgets/Header/HeaderAddressInput";
 import HeaderContacts from "@/widgets/Header/HeaderContacts";
 import HeaderBasket from "@/widgets/Header/HeaderBasket";
+import {NoSsr} from "@mui/base";
 
 const Index = () => {
     return (
-        <S.Header>
+            <S.Header>
 
-            <S.Container>
-
-
-                <S.MobileWrapper>
-
-                    <HeaderMobileBurger/>
-
-                    <Logo/>
-
-                    <HeaderAddressInput/>
-
-                    <HeaderContacts/>
-
-                    <HeaderBasket basketItems={4}/>
-
-                </S.MobileWrapper>
+                <S.Container>
 
 
-            </S.Container>
+                    <S.MobileWrapper>
+                            <HeaderMobileBurger/>
 
-        </S.Header>
+                            <Logo/>
+
+                        <NoSsr>
+                            <HeaderAddressInput/>
+
+                            <HeaderContacts/>
+
+                            <HeaderBasket/>
+                        </NoSsr>
+
+                    </S.MobileWrapper>
+
+
+                </S.Container>
+
+            </S.Header>
+
     );
 };
 

@@ -1,5 +1,6 @@
 import {styled} from "@/shared/globalStyles";
 import {adaptiveValue} from "@/shared/globalStyleFunction";
+import Link from "next/link";
 
 
 const size: number = 90
@@ -15,7 +16,7 @@ let OurCafe: React.FC = (props) => {
                     <div className="OurCafe__Description">
                         Мы расположены в одном из самых живописных мест города — на берегу реки, это ваш оазис в черте города, куда можно сбежать от шумного и пыльного мегаполиса. Мы, действительно уникальные, ведь все продумано до мелочей: проект построен из дикого закарпатского сруба, камин в основном зале ресторана и панорамные окна с видом на реку, уютные беседки на берегу реки и лучшая видовая террасса, шатер с посадкой на 200 человек, сказочный детский домик и бассейн.
                     </div>
-                    <a href="#" className="OurCafe__Button">ПОСМОТРЕТЬ МЕНЮ</a>
+                    <Link href="/#cold" className="OurCafe__Button">ПОСМОТРЕТЬ МЕНЮ</Link>
                 </div>
 
                 <div className="OurCafe__iconsWrapper">

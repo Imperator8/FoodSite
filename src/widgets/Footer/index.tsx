@@ -2,6 +2,7 @@ import Logo from "@/entities/Logo";
 import {styled} from "@/shared/globalStyles";
 import React from "react";
 import {adaptiveValue} from "@/shared/globalStyleFunction";
+import Link from "next/link";
 
 
 let Index: React.FC = (props) => {
@@ -26,9 +27,9 @@ let Index: React.FC = (props) => {
 
                 <div className="footer__aboutWrapper">
                     <a href="#" className="footer__aboutButton">О ресторане</a>
-                    <a href="#" className="footer__aboutButton">Условия доставки</a>
+                    <Link href={'/delivery'} className='footer__aboutButton'>Условия доставки</Link>
                     <a href="#" className="footer__aboutButton">Возврат товара</a>
-                    <a href="#" className="footer__aboutButton">Акции</a>
+                    <Link href={'/actions'} className='footer__aboutButton'>Акции</Link>
                 </div>
 
             </div>

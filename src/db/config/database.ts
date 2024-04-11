@@ -1,10 +1,9 @@
 import mongoose from 'mongoose'
 
 
-
 const connectionDB = async () => {
 
-    if (mongoose.connections[0].readyState) {
+    if (mongoose.connection.readyState === 1) {
         return true
     }
 

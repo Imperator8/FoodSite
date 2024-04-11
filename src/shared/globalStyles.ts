@@ -14,7 +14,7 @@ const paddingContainer: number = 30;
 const containerWidth: number = maxContainerWidth + paddingContainer
 
 
-const { globalCss, getCssText, styled } = createStitches({
+const { globalCss, getCssText, styled, css } = createStitches({
     theme: {
         colors: {
             greyText: "#CFCFCF",
@@ -173,12 +173,11 @@ const setupStyle = globalCss({
         },
     },
 
+    '.Scroll': {
+        display: 'none'
+    }
+
 })
-
-
-export const setupGlobalStyle = () => {
-    setupStyle()
-}
 
 
 export {
@@ -186,6 +185,8 @@ export {
     paddingContainer,
     styled,
     getCssText,
+    setupStyle,
+    css,
 
     maxWidth,
     minWidth,

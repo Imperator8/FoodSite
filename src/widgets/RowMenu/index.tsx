@@ -1,10 +1,9 @@
-
-
-import {FC} from "react";
-import Drug from "@/shared/Drug";
+import React, {FC} from "react";
 import {styled} from "@/shared/globalStyles";
 import {adaptiveValue} from "@/shared/globalStyleFunction";
+import Drug from "@/shared/Drug";
 import HeaderBasket from "@/widgets/Header/HeaderBasket";
+import Link from "next/link";
 
 
 interface Index {
@@ -13,44 +12,43 @@ interface Index {
 
 let Index: FC<Index> = ({ type, ...props}) => {
 
-
     return (
         <div {...props}>
 
             <div className="RowMenu__container container">
 
                 <Drug className='nav'>
-                    <a href="#" className="nav__item active">
+                    <Link href="/#cold" className="nav__item active">
                         Холодные закуски
-                    </a>
+                    </Link>
 
-                    <a href="#" className="nav__item">
+                    <Link href="/#hot" className="nav__item">
                         Горячие закуски
-                    </a>
+                    </Link>
 
-                    <a href="#" className="nav__item">
+                    <Link href="/#meet" className="nav__item">
                         Мясные блюда
-                    </a>
+                    </Link>
 
-                    <a href="#" className="nav__item">
+                    <Link href="/#fish" className="nav__item">
                         Рыбные блюда
-                    </a>
+                    </Link>
 
-                    <a href="#" className="nav__item">
+                    <Link href="/#gril" className="nav__item">
                         Гриль меню
-                    </a>
+                    </Link>
 
-                    <a href="#" className="nav__item">
+                    <Link href="/#signature" className="nav__item">
                         Фирменные блюда
-                    </a>
+                    </Link>
 
-                    <a href="#" className="nav__item">
+                    <Link href="/#drinks" className="nav__item">
                         Напитки
-                    </a>
+                    </Link>
                 </Drug>
 
                 {type === "scroll" ? (
-                    <HeaderBasket basketItems={4} className={'scroll__basket__button'}/>
+                    <HeaderBasket className={'scroll__basket__button'}/>
                 ): null}
 
             </div>
@@ -68,13 +66,13 @@ Index = styled(Index, {
     maxHeight: 'fit-content',
     borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
 
-    '.RowMenu__container': {
+    '& .RowMenu__container': {
         display: 'flex',
         alignItems: 'center',
         gap: '70px',
     },
 
-    '.nav': {
+    '& .nav': {
         display: 'flex',
         gap: '60px',
         overflowX: 'scroll',
@@ -86,7 +84,7 @@ Index = styled(Index, {
         },
     },
 
-    '.active': {
+    '& .active': {
         color: '#FFFFFF !important',
 
         '&::before': {
@@ -101,7 +99,7 @@ Index = styled(Index, {
         },
     },
 
-    '.nav__item': {
+    '& .nav__item': {
         minWidth: 'fit-content',
         textDecoration: 'none',
         height: '100%',

@@ -46,7 +46,7 @@ let Index: React.FC = (props) => {
 
                         <Logo/>
 
-                        <HeaderBasket basketItems={4}/>
+                        <HeaderBasket/>
 
                     </S.MobileWrapper>
 

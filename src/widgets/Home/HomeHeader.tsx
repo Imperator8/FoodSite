@@ -1,8 +1,8 @@
-import React from 'react';
+import {FC} from 'react';
 import {styled} from "@/shared/globalStyles";
 import {adaptiveValue} from "@/shared/globalStyleFunction";
 
-let HomeHeader: React.FC = (props) => {
+let HomeHeader: FC = ({ ...props }) => {
     return (
         <div {...props}>
             <div className="HeadHomeBackground"></div>
@@ -39,7 +39,7 @@ HomeHeader = styled(HomeHeader, {
     backgroundPosition: 'center center',
     backgroundSize: 'cover',
 
-    '& .HeadHomeBackground': {
+    '.HeadHomeBackground': {
         position: 'absolute',
         zIndex: 0,
         width: '100%',
@@ -47,13 +47,13 @@ HomeHeader = styled(HomeHeader, {
         background: 'linear-gradient(90deg, #0c0c0c 0%, rgba(68, 64, 63, 0) 100%)',
     },
 
-    '& .HeadHomeContainer': {
+    '.HeadHomeContainer': {
         position: 'relative',
         display: 'flex',
         height: '100%',
     },
 
-    '& .WrapperText': {
+    '.WrapperText': {
         position: 'absolute',
         width: '100%',
         height: '100%',
@@ -62,7 +62,7 @@ HomeHeader = styled(HomeHeader, {
         marginLeft: adaptiveValue(50, 0),
     },
 
-    '& .HeadHomeButton': {
+    '.HeadHomeButton': {
         width: 'fit-content',
         padding: '8px 17px',
         height: 'fit-content',
@@ -99,7 +99,7 @@ HomeHeader = styled(HomeHeader, {
         },
     },
 
-    '& .BackCard, .Card': {
+    '.BackCard, .Card': {
         position: 'absolute',
         fontStyle: 'italic',
         fontWeight: 900,
@@ -110,14 +110,14 @@ HomeHeader = styled(HomeHeader, {
         transform: 'rotate(-8.37deg)',
     },
 
-    '& .BackCard': {
+    '.BackCard': {
         '-webkit-text-stroke': '1px rgba(255, 255, 255, 0.5)',
         color: 'rgba(0, 0, 0, 0)',
         top: '5px',
         left: '-3px',
     },
 
-    '& .Card': {
+    '.Card': {
         marginRight: '-3px',
         color: '$whiteText',
     },
@@ -125,4 +125,4 @@ HomeHeader = styled(HomeHeader, {
 });
 
 
-export { HomeHeader }; //
+export { HomeHeader }

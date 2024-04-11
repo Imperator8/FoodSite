@@ -1,14 +1,14 @@
 import {FC, HTMLAttributes} from "react";
 import Drug from "@/shared/Drug";
 import {ShowCase as ShowCaseInterface} from "@/widgets/Home/model";
-import {ShowCaseCard} from "@/widgets/Home/ShowCaseCard";
+import ShowCaseCard from "@/widgets/Home/ShowCaseCard";
 import {styled} from "@/shared/globalStyles";
 import {adaptiveValue} from "@/shared/globalStyleFunction";
 
-let ShowCase: FC<ShowCaseInterface> = ({list, title, ...props}) => {
+let ShowCase: FC<ShowCaseInterface> = ({list, title, sectionId, ...props}) => {
 
     return (
-        <section className='ShowCase' {...props}>
+        <section id={sectionId} className='ShowCase' {...props}>
             <div className="container">
 
                 <h2 className="ShowCase__title">
@@ -18,7 +18,7 @@ let ShowCase: FC<ShowCaseInterface> = ({list, title, ...props}) => {
             </div>
 
             <Drug className="ShowCase__wrapper__cards">
-                {list.map((item) => <ShowCaseCard item={item} key={item.id}/>)}
+                {list.map((item) => <ShowCaseCard item={item} key={item._id}/>)}
             </Drug>
 
         </section>

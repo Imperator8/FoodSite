@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="aa25f494-2a07-43c5-94f5-29d378f63b2a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/app/actions/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/api/getOrderItems/route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/basket/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/delivery/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/js.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/product/[productId]/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SmallTextBack/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/db/config/redis.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/db/dtos/articleDto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/db/models/addToOrder.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/db/models/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/db/services/addToOrder-service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/db/services/articles-service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/db/utils/connectWrapper.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stores/basket.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stores/models.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/widgets/Action/ActionCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/widgets/Action/ActionWrapper.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/widgets/Action/models.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/widgets/Basket/AddToOrder/AddToOrderItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/widgets/Basket/AddToOrder/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/widgets/Basket/AddToOrder/style.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/widgets/Basket/ItemsBasket/BasketItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/widgets/Basket/ItemsBasket/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/widgets/Basket/ItemsBasket/models.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/widgets/Basket/PlaceOrder/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/widgets/Basket/PlaceOrder/style.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/widgets/Basket/TitleBasket/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/widgets/Delivery/Map.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/widgets/Delivery/Questions.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/widgets/Delivery/WorkInfo.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/widgets/Home/ShowCaseCardButton.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/widgets/Home/ShowCaseCardCircleItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/widgets/Product/CardButton.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/widgets/Product/CardProduct.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/widgets/Product/models.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Food.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/actions/articles.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/config/database.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/config/database.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/models/articles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/models/articles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Scrool/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Scrool/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/globalStyles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/globalStyles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widgets/Footer/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widgets/Footer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Footer/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widgets/Header/HeaderBasket/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Header/HeaderBasket/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widgets/Header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Header/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widgets/Home/HomeHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Home/HomeHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widgets/Home/OurCafe.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Home/OurCafe.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widgets/Home/ShowCase.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Home/ShowCase.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widgets/Home/ShowCaseCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Home/ShowCaseCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widgets/Home/model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Home/model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widgets/RowMenu/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/RowMenu/index.tsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/AppData/Local/Temp/32b4fd83-9be6-4092-8138-68e1c3480083_ліля.rar.083/ліля/лаба 5.mdj" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2d0X3dS0IKfyZSUEH4XCikGUP8c" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Proects/Proects 2024/Next/Food/src/widgets/Product&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\Proects\\Proects 2024\\Next\\Food\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Proects\Proects 2024\Next\Food\src\widgets\Product" />
+      <recent name="D:\Proects\Proects 2024\Next\Food\src\widgets" />
+      <recent name="D:\Proects\Proects 2024\Next\Food\src\widgets\Delivery" />
+      <recent name="D:\Proects\Proects 2024\Next\Food\src\widgets\Basket" />
+      <recent name="D:\Proects\Proects 2024\Next\Food\src\components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Proects\Proects 2024\Next\Food\src\app\product\[productId]" />
+      <recent name="D:\Proects\Proects 2024\Next\Food" />
+      <recent name="D:\Proects\Proects 2024\Next\Food\src\app" />
+      <recent name="D:\Proects\Proects 2024\Next\Food\src" />
+      <recent name="D:\Proects\Proects 2024\Next\Food\db" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aa25f494-2a07-43c5-94f5-29d378f63b2a" name="Changes" comment="" />
+      <created>1709145771216</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1709145771216</updated>
+      <workItem from="1709145772298" duration="2309000" />
+      <workItem from="1709327011405" duration="2364000" />
+      <workItem from="1711210455433" duration="2929000" />
+      <workItem from="1711292340959" duration="1144000" />
+      <workItem from="1711388986186" duration="1550000" />
+      <workItem from="1711390601788" duration="12145000" />
+      <workItem from="1711442030441" duration="170000" />
+      <workItem from="1711442248578" duration="282000" />
+      <workItem from="1711443085332" duration="17246000" />
+      <workItem from="1711479169893" duration="16408000" />
+      <workItem from="1711652426074" duration="2681000" />
+      <workItem from="1711702220214" duration="10469000" />
+      <workItem from="1711799418296" duration="5914000" />
+      <workItem from="1711908727687" duration="5525000" />
+      <workItem from="1711990671044" duration="2330000" />
+      <workItem from="1712154039305" duration="2593000" />
+      <workItem from="1712235375188" duration="95278000" />
+      <workItem from="1712772169551" duration="5570000" />
+      <workItem from="1712838655910" duration="14614000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

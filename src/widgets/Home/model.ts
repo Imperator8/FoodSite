@@ -1,15 +1,9 @@
 import {HTMLAttributes} from "react";
+import {ArticlesInterface} from "@/db/models/types";
 
 
-export interface ShowCaseCards {
-    id: number,
-    img: string,
-    title: string,
-    heft: number,
-    description: string,
-    price: number,
+export interface ShowCaseCards extends ArticlesInterface{
     selectItems?: number,
-    url: string
 }
 
 export interface ShowCaseCard {
@@ -18,7 +12,8 @@ export interface ShowCaseCard {
 
 export interface ShowCase extends HTMLAttributes<HTMLDivElement>{
     list: ShowCaseCards[],
-    title: string
+    title: string,
+    sectionId?: string
 }
 
 
