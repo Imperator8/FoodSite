@@ -51,7 +51,8 @@ const setupStyle = globalCss({
     },
     html: {
         height: "100%",
-        minWidth: `${minWidth}px`
+        minWidth: `${minWidth}px`,
+        scrollBehavior: "smooth !important"
     },
 
     main: {

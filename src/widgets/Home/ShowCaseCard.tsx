@@ -5,19 +5,20 @@ import {adaptiveValue} from "@/shared/globalStyleFunction";
 import ShowCaseCardButton from "@/widgets/Home/ShowCaseCardButton";
 import ShowCaseCardCircleItem from "@/widgets/Home/ShowCaseCardCircleItem";
 import Link from "next/link";
+import Image from "next/image";
 
 let ShowCaseCard: FC<ShowCaseCardInterface> = ({item, ...props}) => {
 
     return (
-        <div className="ShowCaseCard" {...props}>
+        <div id={item.url.replace('/product/', '')} className="ShowCaseCard" {...props}>
 
             <ShowCaseCardCircleItem id={item._id}/>
 
-            <img src={item.img} alt={item.title} draggable="false"/>
+            <Image width={320} height={230} src={item.img} alt={item.title} draggable="false"/>
 
             <div className="ShowCaseCard__wrapper">
 
-            <div className="ShowCaseCard__wrapperTitle">
+                <div className="ShowCaseCard__wrapperTitle">
                     <Link href={item.url} className="ShowCaseCard__Title">{item.title}</Link>
                     <span className="ShowCaseCard__Heft">Вес: {item.heft}</span>
                 </div>
@@ -33,7 +34,7 @@ let ShowCaseCard: FC<ShowCaseCardInterface> = ({item, ...props}) => {
 
 ShowCaseCard = styled(ShowCaseCard, {
     maxWidth: '20rem',
-    width: adaptiveValue(320, 300),
+    width: 320,
     display: 'flex',
     flexDirection: 'column',
     background: 'linear-gradient(90deg, #494544 0%, #504B4A 100%)',
@@ -48,8 +49,8 @@ ShowCaseCard = styled(ShowCaseCard, {
 
     '> img': {
         borderRadius: '1rem 1rem 0 0',
-        height: "200%",
-        maxHeight: '210px',
+        height: "1000%",
+        maxHeight: '230px',
     },
 
     '.ShowCaseCard__wrapper': {

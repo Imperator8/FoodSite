@@ -1,5 +1,5 @@
 import {ArticlesModel} from "../models/articles";
-import {ArticlesInterface} from "@/db/models/types";
+import {ArticlesInterface, ArticlesTypesDict} from "@/db/models/types";
 import {connectWrapper} from "@/db/utils/connectWrapper";
 import {ArticleDto} from "@/db/dtos/articleDto";
 import {connectRedis} from "@/db/config/redis";
@@ -24,24 +24,33 @@ export class ArticlesService {
     })
 
     static getArticlesListTypes = connectWrapper(async () => {
-        const res = await this.getArticles()
+        const res: ArticlesTypesDict[] = await this.getArticles()
 
-        const result: ArticlesInterface[] = []
-
-        for (const item of res) {
-            result.push(new ArticleDto(item))
+        let resultDict: ArticlesTypesDict = {
+            cold: [],
+            hot: [],
+            meat: [],
+            fish: [],
+            grill: [],
+            signature: [],
+            drinks: [],
         }
 
-        return JSON.parse(JSON.stringify(result))
+        for (const item of res) {
+            // @ts-ignore
+            resultDict[item.type].push(new ArticleDto(item))
+        }
+
+        return JSON.parse(JSON.stringify(resultDict))
     })
 
     static getArticlesByIds = connectWrapper(async (ids: string[]) => {
         return JSON.parse(JSON.stringify(await ArticlesModel.find().where('_id').in(ids)))
     })
 
-    static getArticlesByUrl = connectRedis(connectRedis(async (url: string, RedisClient?: RedisClient) => {
+    static getArticlesByUrl = connectRedis(connectWrapper(async (url: string, RedisClient?: RedisClient) => {
 
-        const resRedis = await RedisClient.GET(url)
+        const resRedis = await RedisClient.get(url)
 
         if (resRedis) {
             return JSON.stringify(new ArticleDto(JSON.parse(resRedis)))
@@ -49,15 +58,13 @@ export class ArticlesService {
 
         const res = JSON.stringify(new ArticleDto(await ArticlesModel.findOne({ url: url })))
 
-        await RedisClient.SET(url, res, {
-            EX: 24 * 3600
-        })
+        await RedisClient.set(url, res)
 
         return res
 
     }))
 
-    static getRandomArticles = connectRedis(async (count: number, type: string, removeId?: string) => {
+    static getRandomArticles = connectWrapper(async (count: number, type: string, removeId?: string) => {
 
         let res = await ArticlesModel.find({ _id: {$ne: removeId}, type: type }).where().limit(count)
 

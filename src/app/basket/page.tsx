@@ -5,23 +5,28 @@ import TitleBasket from "@/widgets/Basket/TitleBasket";
 import ItemsBasket from "@/widgets/Basket/ItemsBasket";
 import AddToOrder from "@/widgets/Basket/AddToOrder";
 import PlaceOrder from "@/widgets/Basket/PlaceOrder";
+import {ArticlesInterface} from "@/db/models/types";
+import {AddToOrderServices} from "@/db/services/addToOrder-service";
 
-const Page = () => {
+const Page = async () => {
+
+    const list: ArticlesInterface[] = await AddToOrderServices.getArticles()
+
     return (
         <>
 
             <main>
                 <RowMenu/>
 
-                <TitleBasket/>
-
                 <NoSsr>
+                    <TitleBasket/>
+
                     <ItemsBasket/>
+
+                    <AddToOrder list={list}/>
+
+                    <PlaceOrder/>
                 </NoSsr>
-
-                <AddToOrder/>
-
-                <PlaceOrder/>
 
             </main>
 

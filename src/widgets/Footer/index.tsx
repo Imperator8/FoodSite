@@ -1,3 +1,5 @@
+'use client'
+
 import Logo from "@/entities/Logo";
 import {styled} from "@/shared/globalStyles";
 import React from "react";
@@ -26,9 +28,9 @@ let Index: React.FC = (props) => {
                 </div>
 
                 <div className="footer__aboutWrapper">
-                    <a href="#" className="footer__aboutButton">О ресторане</a>
+                    <Link href={"/aboutRestoration"} className="footer__aboutButton">О ресторане</Link>
                     <Link href={'/delivery'} className='footer__aboutButton'>Условия доставки</Link>
-                    <a href="#" className="footer__aboutButton">Возврат товара</a>
+                    <Link href={"/returnArticle"} className="footer__aboutButton">Возврат товара</Link>
                     <Link href={'/actions'} className='footer__aboutButton'>Акции</Link>
                 </div>
 

@@ -17,7 +17,7 @@ export default function RootLayout({children}: Readonly<{children: React.ReactNo
     return (
         <html lang="ru">
             <head>
-                <style id="stitches" dangerouslySetInnerHTML={{__html: getCssText()}}/>
+                <style id='stitches' dangerouslySetInnerHTML={{__html: getCssText()}}/>
             </head>
             <body className={inter.className}>
                 <div className='wrapper'>

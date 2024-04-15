@@ -1,3 +1,5 @@
+'use client'
+
 import { adaptiveValue } from "@/shared/globalStyleFunction";
 import {styled} from "@/shared/globalStyles";
 
@@ -45,7 +47,7 @@ let Contacts: React.FC = (props) => {
                     <div className="Contacts__ContactsWrapper">
 
                         <div className="Contacts__RegistrationWrapper">
-                            <a className="Contacts__RegistrationButton" href="#">ЗАБРОНИРОВАТЬ СТОЛ</a>
+                            <a className="Contacts__RegistrationButton" href="/orderTable">ЗАБРОНИРОВАТЬ СТОЛ</a>
                             <div className="Contacts__RegistrationPhoneWrapper">
                                 <span>+7 (917) 510-57-59</span>
                                 <span>Звоните или оставляйте заявку</span>

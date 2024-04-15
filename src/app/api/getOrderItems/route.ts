@@ -1,4 +1,4 @@
-import AddToOrderServices from "@/db/services/addToOrder-service"
+import {AddToOrderServices} from "@/db/services/addToOrder-service"
 
 
 export async function GET() {

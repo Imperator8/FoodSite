@@ -37,7 +37,7 @@ let Index: FC = (props) => {
 
             <div className="BasketTitle__container container">
 
-                <SmallTextBack href={'/'}>к выбору блюда</SmallTextBack>
+                <SmallTextBack href={'/#cold'}>к выбору блюда</SmallTextBack>
 
                 <div className="BasketTitle__Title">
                     <div className="BasketTitle__Line"></div>

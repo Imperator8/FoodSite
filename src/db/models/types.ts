@@ -1,4 +1,4 @@
-
+import {DatesForm} from "@/stores/models";
 
 
 export interface ArticlesInterface {
@@ -14,6 +14,21 @@ export interface ArticlesInterface {
     fats: number,
     carbohydrates: number,
     kilocalories: number
+}
+
+export interface ArticlesTypesDict {
+    cold?: ArticlesInterface[],
+    hot?: ArticlesInterface[],
+    meat?: ArticlesInterface[],
+    fish?: ArticlesInterface[],
+    grill?: ArticlesInterface[],
+    signature?: ArticlesInterface[],
+    drinks?: ArticlesInterface[],
+}
+
+export interface OrderStoreTypes {
+    data: DatesForm,
+    articles: ArticlesInterface[]
 }
 
 

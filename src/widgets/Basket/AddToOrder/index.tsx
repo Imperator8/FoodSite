@@ -1,13 +1,17 @@
+'use client'
+
 import * as S from "./style";
 import {Container} from "@/shared/globalComponents";
 import {AddToOrderItem} from "@/widgets/Basket/AddToOrder/AddToOrderItem";
-import {AddToOrderServices} from "@/db/services/addToOrder-service";
 import {ArticlesInterface} from "@/db/models/types";
+import {FC} from "react";
+
+interface IndexInterface {
+    list: ArticlesInterface[]
+}
 
 
-const Index = async () => {
-
-    const list: ArticlesInterface[] = await AddToOrderServices.getArticles()
+const Index: FC<IndexInterface> = ({ list }) => {
 
     return (
         <S.Section>

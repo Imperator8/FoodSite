@@ -1,9 +1,12 @@
+'use client'
+
 import {FC} from "react";
 import CardButton from "@/widgets/Product/CardButton";
 import {styled} from "@/shared/globalStyles";
 import {ArticlesInterface} from "@/db/models/types";
 import Link from "next/link";
 import {adaptiveValue} from "@/shared/globalStyleFunction";
+import Image from "next/image"
 
 export interface CardProductInterface {
     item: ArticlesInterface
@@ -15,7 +18,7 @@ let CardProduct: FC<CardProductInterface> = ({item, ...props}) => {
         <section className="CardProduct" {...props}>
             <div className="CardProduct__container container">
 
-                <Link className="CardProduct__backButton" href="/">
+                <Link className="CardProduct__backButton" href={`/#${item.type}`}>
                     <div className="CardProduct__backArrow">
                         <svg width="7" height="12" viewBox="0 0 7 12" fill="white" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -29,7 +32,7 @@ let CardProduct: FC<CardProductInterface> = ({item, ...props}) => {
                 <div className="CardProduct__Wrapper">
 
                     <div className="CardProduct__Img">
-                        <img src={item.img} alt="Product"/>
+                        <Image height={400} width={600} src={item.img} alt="Product"/>
                     </div>
 
                     <div className="CardProduct__AboutProduct">
@@ -168,7 +171,7 @@ CardProduct = styled(CardProduct, {
             maxWidth: '100%',
             maxHeight: '100%',
             height: 400,
-            width: '100%',
+            width: '100% !important',
             objectFit: 'cover',
 
             "@mobile": {

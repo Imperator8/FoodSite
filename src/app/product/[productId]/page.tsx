@@ -1,3 +1,5 @@
+'use server'
+
 import React from 'react';
 import RowMenu from "@/widgets/RowMenu";
 import {Contacts} from "@/widgets/Home/Contacts";
@@ -6,12 +8,14 @@ import {CardProduct} from "@/widgets/Product/CardProduct";
 import {ArticlesService} from "@/db/services/articles-service";
 import {ShowCase} from "@/widgets/Home/ShowCase";
 import {ArticlesInterface} from "@/db/models/types";
+import {NoSsr} from "@mui/base";
 
 const Index = async ({ params }: {params: {productId: string}}) => {
 
-    const article: ArticlesInterface = JSON.parse(await ArticlesService.getArticlesByUrl("/product/" + params.productId))
+    let article: ArticlesInterface = JSON.parse(await ArticlesService.getArticlesByUrl("/product/" + params.productId))
 
-    const recommended_list = JSON.parse(await ArticlesService.getRandomArticles(4, article.type, "6617e57e4e3e7e319a34819d"))
+    let recommended_list = JSON.parse(await ArticlesService.getRandomArticles(4, article.type, article._id))
+
 
     return (
         <>
@@ -28,6 +32,7 @@ const Index = async ({ params }: {params: {productId: string}}) => {
                 <Map style={{
                     maxHeight: '540px',
                 }}/>
+
             </main>
 
         </>

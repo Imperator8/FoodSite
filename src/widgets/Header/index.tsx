@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react';
 import * as S from './styles';
 import Logo from "../../entities/Logo";
@@ -17,9 +19,10 @@ const Index = () => {
                     <S.MobileWrapper>
                             <HeaderMobileBurger/>
 
+                        <NoSsr>
                             <Logo/>
 
-                        <NoSsr>
+
                             <HeaderAddressInput/>
 
                             <HeaderContacts/>

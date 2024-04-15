@@ -11,7 +11,7 @@ export class AddToOrderServices {
 
     static getArticles = connectRedis(connectWrapper(async (RedisClient?: RedisClient) => {
 
-        const resRedis = await RedisClient.GET("addToOrderArticles")
+        const resRedis = await RedisClient.get("addToOrderArticles")
 
         if (resRedis) {
             return JSON.parse(resRedis)
@@ -21,9 +21,7 @@ export class AddToOrderServices {
 
         res = res.map(item => new ArticleDto(item))
 
-        RedisClient.SET("addToOrderArticles", JSON.stringify(res), {
-            EX: 3600 * 24
-        })
+        RedisClient.set("addToOrderArticles", JSON.stringify(res))
 
         return JSON.parse(JSON.stringify(res))
     }))

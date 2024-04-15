@@ -22,6 +22,7 @@ let Index: React.FC = () => {
             startDecorator={<LocationOnOutlinedIcon className="startDecorator"/>}
             placeholder="Введите адресс доставки"
             options={addressList}
+            name={'address'}
             forcePopupIcon={false}
             endDecorator={<SearchIcon className={'endDecorator'}/>}
         />

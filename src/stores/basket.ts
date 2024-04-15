@@ -11,6 +11,7 @@ export interface Basket {
     minusArticles: (id: string | number) => void,
     deleteArticles: (id: string | number) => void,
     calculateArticles: () => number,
+    reset: () => void
 }
 
 export const useBasket = create<Basket>()(
@@ -82,6 +83,13 @@ export const useBasket = create<Basket>()(
                     return len
 
                 },
+                reset: () => set(() => {
+
+                    return ({
+                        articles: {}
+                    })
+
+                }),
             }),
             {
                 name: 'basket',

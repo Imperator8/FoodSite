@@ -3,7 +3,7 @@ import {styled} from "@/shared/globalStyles";
 
 const Index = () => {
     return (
-        <MobileMenu>
+        <MobileMenu style={{ display: 'none' }}>
             <MenuOutlinedIcon fontSize='large' className='burger__icon'/>
             <span>МЕНЮ</span>
         </MobileMenu>
@@ -12,7 +12,6 @@ const Index = () => {
 
 
 const MobileMenu = styled('div', {
-    display: 'none',
     flexDirection: 'column',
     color: '$whiteText',
     alignItems: 'center',
@@ -24,7 +23,7 @@ const MobileMenu = styled('div', {
     },
 
     '@mobile': {
-        display: 'flex',
+        display: 'flex !important',
     },
 })
 

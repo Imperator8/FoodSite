@@ -10,12 +10,10 @@ import Scrool from "@/entities/Scrool";
 import * as fs from "fs";
 import {NoSsr} from "@mui/base";
 import { ArticlesService } from "@/db/services/articles-service";
-import dynamic from "next/dynamic";
 import {transliterate} from "transliteration"
-import {ArticlesInterface} from "@/db/models/types";
+import {ArticlesInterface, ArticlesTypesDict} from "@/db/models/types";
 import {AddToOrderServices} from "@/db/services/addToOrder-service";
-
-const HomeHeader = dynamic(() => import('@/widgets/Home/HomeHeader').then(module => module.HomeHeader),{ ssr: false });
+import {HomeHeader} from "@/widgets/Home/HomeHeader";
 
 const writeWithStore = async () => {
     const jsonData = fs.readFileSync('./src/app/js.json', 'utf-8');
@@ -27,17 +25,28 @@ const writeWithStore = async () => {
         return newItem
     })
 
-    await AddToOrderServices.resetArticles()
+    await ArticlesService.resetArticles()
 
-    await AddToOrderServices.writeArticles(data)
+    await ArticlesService.writeArticles(data)
 
+}
+
+
+const namesShowCase = {
+    cold: "Холодные закуски",
+    hot: "Горячие закуски",
+    meat: "Мясные блюда",
+    fish: "Рыбные блюда",
+    grill: "Гриль меню",
+    signature: "Фирменные блюда",
+    drinks: "Напитки",
 }
 
 const Index = async () => {
 
     // await writeWithStore()
 
-    const hot_list = await ArticlesService.getArticlesListTypes()
+    const hot_list: ArticlesTypesDict = await ArticlesService.getArticlesListTypes()
 
     return (
         <>
@@ -49,7 +58,15 @@ const Index = async () => {
                 <HomeHeader/>
                 <RowMenu/>
 
-                <ShowCase list={hot_list} title="ГОРЯЧИЕ ЗАКУСКИ" sectionId='hot'/>
+                {
+                    Object.keys(hot_list).map(id => {
+                        // @ts-ignore
+                        if (hot_list[id].length !== 0) {
+                            // @ts-ignore
+                            return <ShowCase key={id} list={hot_list[id]} title={namesShowCase[id]} sectionId={id}/>
+                        }
+                    })
+                }
 
                 <OurCafe/>
                 <Contacts/>

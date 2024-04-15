@@ -26,7 +26,7 @@ let Index: FC<Index> = ({ type, ...props}) => {
                         Горячие закуски
                     </Link>
 
-                    <Link href="/#meet" className="nav__item">
+                    <Link href="/#meat" className="nav__item">
                         Мясные блюда
                     </Link>
 
@@ -34,7 +34,7 @@ let Index: FC<Index> = ({ type, ...props}) => {
                         Рыбные блюда
                     </Link>
 
-                    <Link href="/#gril" className="nav__item">
+                    <Link href="/#grill" className="nav__item">
                         Гриль меню
                     </Link>
 

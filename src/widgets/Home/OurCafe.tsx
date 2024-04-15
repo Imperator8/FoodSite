@@ -1,3 +1,5 @@
+'use client'
+
 import {styled} from "@/shared/globalStyles";
 import {adaptiveValue} from "@/shared/globalStyleFunction";
 import Link from "next/link";

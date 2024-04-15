@@ -1,4 +1,6 @@
-import {FC, HTMLAttributes} from "react";
+'use client'
+
+import {FC} from "react";
 import Drug from "@/shared/Drug";
 import {ShowCase as ShowCaseInterface} from "@/widgets/Home/model";
 import ShowCaseCard from "@/widgets/Home/ShowCaseCard";
@@ -8,7 +10,12 @@ import {adaptiveValue} from "@/shared/globalStyleFunction";
 let ShowCase: FC<ShowCaseInterface> = ({list, title, sectionId, ...props}) => {
 
     return (
-        <section id={sectionId} className='ShowCase' {...props}>
+        <section className='ShowCase' {...props}>
+            <div className='toId' id={sectionId} style={{
+                position: 'absolute',
+                left: 0,
+                top: -80
+            }}></div>
             <div className="container">
 
                 <h2 className="ShowCase__title">
@@ -28,6 +35,7 @@ let ShowCase: FC<ShowCaseInterface> = ({list, title, sectionId, ...props}) => {
 ShowCase = styled(ShowCase, {
     borderTop: '1px solid rgba(255, 255, 255, 0.1)',
     paddingTop: adaptiveValue(50, 35),
+    position: 'relative',
 
     '.ShowCase__title': {
         borderLeft: '4px solid #618967',

@@ -1,10 +1,13 @@
-'use client'
+"use client"
 
 import * as S from './style'
 import {Container} from "@/shared/globalComponents";
 import {useBasket} from "@/stores/basket";
+import {useRouter} from "next/navigation";
 
 const Index = () => {
+
+    const { push } = useRouter();
 
     const articles = useBasket(state => state.articles)
 
@@ -14,6 +17,13 @@ const Index = () => {
 
     for (const article of Object.keys(articles).map(key => articles[key])) {
         sum += article.price * article.count
+    }
+
+    const clickHandler = () => {
+        if (minimumToOrder <= sum) {
+            push('/orderPage');
+        }
+
     }
 
     return (
@@ -38,14 +48,17 @@ const Index = () => {
                         </S.TextDelivery>
 
                         <S.TextDelivery>
-                            <span>Минимальная сума заказа {minimumToOrder} ₽</span>
-                            <span></span>
+                            {minimumToOrder > sum ? <>
+                                <span>Минимальная сума заказа</span>
+                                <span>{minimumToOrder} ₽</span>
+                            </> : null}
+
                         </S.TextDelivery>
 
 
                     </S.TextWrapper>
 
-                    <S.Button >Оформить заказ</S.Button>
+                    <S.Button onClick={clickHandler}>Оформить заказ</S.Button>
 
 
                 </S.Wrapper>

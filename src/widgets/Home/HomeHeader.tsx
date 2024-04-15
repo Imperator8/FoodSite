@@ -1,6 +1,9 @@
+'use client'
+
 import {FC} from 'react';
 import {styled} from "@/shared/globalStyles";
 import {adaptiveValue} from "@/shared/globalStyleFunction";
+import Link from "next/link";
 
 let HomeHeader: FC = ({ ...props }) => {
     return (
@@ -20,9 +23,9 @@ let HomeHeader: FC = ({ ...props }) => {
                         БЛЮд за 60 минут
                     </div>
 
-                    <button className="HeadHomeButton">
+                    <Link href={'/#cold'} className="HeadHomeButton">
                         Еще не пробовал?
-                    </button>
+                    </Link>
                 </div>
 
             </div>
