@@ -18,12 +18,13 @@ let HeaderMobileBurger: FC = ({...props}) => {
     };
 
     return (
-        <div style={{ display: 'none' }} {...props}>
-            <MenuOutlinedIcon style={{color: '#5b8361' }} fontSize='large' onClick={toggleDrawer} className='burger__icon'/>
-            <span>МЕНЮ</span>
+        <div style={{ display: 'none' }} onClick={toggleDrawer} {...props}>
             <NoSsr>
-                <TopMenuDrawer open={open} toggleDrawer={toggleDrawer} setOpen={setOpen}/>
+                <MenuOutlinedIcon style={{color: '#5b8361' }} fontSize='large' className='burger__icon'/>
             </NoSsr>
+
+            <span>МЕНЮ</span>
+            <TopMenuDrawer open={open} toggleDrawer={toggleDrawer} setOpen={setOpen}/>
         </div>
     );
 };

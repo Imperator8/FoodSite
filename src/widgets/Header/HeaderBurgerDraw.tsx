@@ -14,7 +14,7 @@ interface TopMenuDrawerProps {
 
 
 const TopMenuDrawer: FC<TopMenuDrawerProps> = ({ open, toggleDrawer, setOpen }) => {
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const [windowWidth, setWindowWidth] = useState(0);
 
     useEffect(() => {
         const handleResize = () => {
