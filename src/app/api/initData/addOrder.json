@@ -1,0 +1,54 @@
+[
+  {
+    "_id": "6617e57e4e3e7e319a34819c",
+    "img": "/items/1.png",
+    "title": "Сладкая корочка",
+    "heft": 250,
+    "description": "Нежные кусочки мяса, обжаренные до золотистой корочки",
+    "price": 200,
+    "type": "meat",
+    "proteins": 17.23,
+    "fats": 7.63,
+    "carbohydrates": 22.35,
+    "kilocalories": 234
+  },
+  {
+    "_id": "6617e57e4e3e7e319a34819d",
+    "img": "/items/2.png",
+    "title": "Шедевр Ясной Зори",
+    "heft": 300,
+    "description": "Ароматные кусочки говядины, поджаренные на огне",
+    "price": 300,
+    "type": "meat",
+    "proteins": 17.23,
+    "fats": 7.63,
+    "carbohydrates": 22.35,
+    "kilocalories": 234
+  },
+  {
+    "_id": "6617e57e4e3e7e319a34819e",
+    "img": "/items/3.png",
+    "title": "Золотые Крылья",
+    "heft": 200,
+    "description": "Крылышки курицы, обжаренные до золотистой корочки",
+    "price": 250,
+    "type": "meat",
+    "proteins": 17.23,
+    "fats": 7.63,
+    "carbohydrates": 22.35,
+    "kilocalories": 234
+  },
+  {
+    "_id": "6617e57e4e3e7e319a34819f",
+    "img": "/items/4.png",
+    "title": "Богатый Аромат",
+    "heft": 280,
+    "description": "Нежные кусочки свинины, обжаренные до идеального состояния",
+    "price": 220,
+    "type": "meat",
+    "proteins": 17.23,
+    "fats": 7.63,
+    "carbohydrates": 22.35,
+    "kilocalories": 234
+  }
+]

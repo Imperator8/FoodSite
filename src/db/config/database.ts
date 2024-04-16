@@ -1,6 +1,5 @@
 import mongoose from 'mongoose'
 
-
 const connectionDB = async () => {
 
     if (mongoose.connection.readyState === 1) {

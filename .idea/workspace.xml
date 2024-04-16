@@ -5,20 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa25f494-2a07-43c5-94f5-29d378f63b2a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/widgets/Header/HeaderBurgerDraw.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/api/initData/addOrder.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/api/initData/route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/not-found.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/product/[productId]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/product/[productId]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Scrool/index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Scrool/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Scrool/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/globalStyles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/globalStyles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/widgets/Basket/ItemsBasket/BasketItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Basket/ItemsBasket/BasketItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/widgets/Header/HeaderAddressInput/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Header/HeaderAddressInput.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/widgets/Header/HeaderBasket/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Header/HeaderBasket.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/widgets/Header/HeaderContacts/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Header/HeaderContacts.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/widgets/Header/HeaderMobileBurger/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Header/HeaderMobileBurger.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/js.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/initData/js.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/config/database.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/config/database.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widgets/Header/HeaderMobileBurger.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Header/HeaderMobileBurger.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/widgets/Header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Header/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/widgets/Product/CardProduct.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Product/CardProduct.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/widgets/RowMenu/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/RowMenu/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widgets/Header/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Header/styles.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +43,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/Proects/Proects 2024/Next/Food/src/app/returnArticle",
+    "last_opened_file_path": "D:/Proects/Proects 2024/Next/Food/src/db/dates",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -59,18 +55,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Proects\Proects 2024\Next\Food\src\db\dates" />
       <recent name="D:\Proects\Proects 2024\Next\Food\src\app\returnArticle" />
       <recent name="D:\Proects\Proects 2024\Next\Food\src\app\aboutResoran" />
       <recent name="D:\Proects\Proects 2024\Next\Food\src\widgets\Product" />
       <recent name="D:\Proects\Proects 2024\Next\Food\src\widgets" />
-      <recent name="D:\Proects\Proects 2024\Next\Food\src\widgets\Delivery" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Proects\Proects 2024\Next\Food\src\app\api\initData" />
       <recent name="D:\Proects\Proects 2024\Next\Food\src\widgets\Header" />
       <recent name="D:\Proects\Proects 2024\Next\Food\src\app\product\[productId]" />
       <recent name="D:\Proects\Proects 2024\Next\Food" />
       <recent name="D:\Proects\Proects 2024\Next\Food\src\app" />
-      <recent name="D:\Proects\Proects 2024\Next\Food\src" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -101,7 +97,7 @@
       <workItem from="1712772169551" duration="5570000" />
       <workItem from="1712838655910" duration="15706000" />
       <workItem from="1712904717176" duration="46550000" />
-      <workItem from="1713110660438" duration="36303000" />
+      <workItem from="1713110660438" duration="39187000" />
     </task>
     <servers />
   </component>

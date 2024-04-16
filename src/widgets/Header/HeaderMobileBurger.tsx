@@ -1,9 +1,12 @@
+'use client'
+
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import {styled} from "@/shared/globalStyles";
-import React, {useState} from "react";
+import React, {FC, useState} from "react";
 import {TopMenuDrawer} from "@/widgets/Header/HeaderBurgerDraw";
+import { NoSsr } from '@mui/material';
 
-const HeaderMobileBurger = () => {
+let HeaderMobileBurger: FC = ({...props}) => {
     const [open, setOpen] = useState(false);
 
     const toggleDrawer = () => {
@@ -15,16 +18,18 @@ const HeaderMobileBurger = () => {
     };
 
     return (
-        <MobileMenu style={{ display: 'none' }} >
-            <MenuOutlinedIcon fontSize='large' onClick={toggleDrawer} className='burger__icon'/>
+        <div style={{ display: 'none' }} {...props}>
+            <MenuOutlinedIcon style={{color: '#5b8361' }} fontSize='large' onClick={toggleDrawer} className='burger__icon'/>
             <span>МЕНЮ</span>
-            <TopMenuDrawer open={open} toggleDrawer={toggleDrawer} setOpen={setOpen}/>
-        </MobileMenu>
+            <NoSsr>
+                <TopMenuDrawer open={open} toggleDrawer={toggleDrawer} setOpen={setOpen}/>
+            </NoSsr>
+        </div>
     );
 };
 
 
-const MobileMenu = styled('div', {
+HeaderMobileBurger = styled(HeaderMobileBurger, {
     flexDirection: 'column',
     color: '$whiteText',
     alignItems: 'center',

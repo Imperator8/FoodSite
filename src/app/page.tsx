@@ -15,21 +15,6 @@ import {ArticlesInterface, ArticlesTypesDict} from "@/db/models/types";
 import {AddToOrderServices} from "@/db/services/addToOrder-service";
 import {HomeHeader} from "@/widgets/Home/HomeHeader";
 
-const writeWithStore = async () => {
-    const jsonData = fs.readFileSync('./src/app/js.json', 'utf-8');
-    let data = JSON.parse(jsonData);
-
-    data = data.map((item: ArticlesInterface) => {
-        let newItem = item
-        newItem.url = "/product/" + transliterate(item.title).replaceAll(" ", "-").toLowerCase()
-        return newItem
-    })
-
-    await ArticlesService.resetArticles()
-
-    await ArticlesService.writeArticles(data)
-
-}
 
 
 const namesShowCase = {

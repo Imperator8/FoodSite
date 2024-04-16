@@ -18,8 +18,9 @@ const Index = () => {
 
 
                     <S.MobileWrapper>
+                        <HeaderMobileBurger/>
+
                         <NoSsr>
-                            <HeaderMobileBurger/>
 
                             <Logo/>
 
