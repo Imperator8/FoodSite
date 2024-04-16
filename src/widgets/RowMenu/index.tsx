@@ -2,7 +2,7 @@ import React, {FC} from "react";
 import {styled} from "@/shared/globalStyles";
 import {adaptiveValue} from "@/shared/globalStyleFunction";
 import Drug from "@/shared/Drug";
-import HeaderBasket from "@/widgets/Header/HeaderBasket";
+import {HeaderBasket} from "@/widgets/Header/HeaderBasket";
 import Link from "next/link";
 
 

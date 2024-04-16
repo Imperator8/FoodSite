@@ -3,8 +3,9 @@
 import PhoneInTalkOutlinedIcon from '@mui/icons-material/PhoneInTalkOutlined';
 import {styled} from "@/shared/globalStyles";
 import {adaptiveValue} from "@/shared/globalStyleFunction";
+import React from "react";
 
-let Index: React.FC = () => (
+let HeaderContacts: React.FC = () => (
     <Content>
 
         <div className="wrapper_icon">
@@ -59,4 +60,4 @@ const Content = styled('div', {
     },
 })
 
-export default Index;
+export {HeaderContacts}

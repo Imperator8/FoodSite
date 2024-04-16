@@ -5,6 +5,7 @@ import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import SearchIcon from '@mui/icons-material/Search';
 import {styled} from "@/shared/globalStyles";
 import {adaptiveValue} from "@/shared/globalStyleFunction";
+import React from "react";
 
 
 const addressList = [
@@ -14,7 +15,7 @@ const addressList = [
 
 
 
-let Index: React.FC = () => {
+let HeaderAddressInput: React.FC = () => {
 
     return (
         <AutocompleteStyle
@@ -57,4 +58,4 @@ const AutocompleteStyle = styled(Autocomplete, {
     }
 })
 
-export default Index
+export {HeaderAddressInput}

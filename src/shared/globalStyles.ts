@@ -41,7 +41,8 @@ const setupStyle = globalCss({
     "*": {
         padding: "0px",
         margin: "0px",
-        border: "0px"
+        border: "0px",
+        "-webkit-tap-highlight-color": "transparent"
     },
     "*:before": {
         boxSizing: "border-box"

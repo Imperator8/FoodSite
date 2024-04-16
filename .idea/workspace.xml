@@ -5,59 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa25f494-2a07-43c5-94f5-29d378f63b2a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/aboutRestoration/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/api/getDataForm/route.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/orderPage/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/orderSuccess/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/orderTable/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/returnArticle/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ButtonLink/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TextPage/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/models/orderStore.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/services/orderStore-services.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stores/formStore.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/widgets/OrderPage/ConfirmOrder.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/widgets/OrderPage/FormContentBox.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/widgets/OrderPage/PersonCount.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/widgets/OrderPage/RadioGroup.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/widgets/OrderPage/Select.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/widgets/OrderPage/SelectDeliveryVariant.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/widgets/OrderPage/SelectPayVariant.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/widgets/OrderPage/WhatDeliveryVariant.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/widgets/OrderPage/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/widgets/Header/HeaderBurgerDraw.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/items/1__Product.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/getOrderItems/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/getOrderItems/route.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/basket/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/basket/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/js.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/js.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/product/[productId]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/product/[productId]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SmallTextBack/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SmallTextBack/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/config/database.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/config/database.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/config/redis.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/config/redis.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/models/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/models/types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/services/addToOrder-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/services/addToOrder-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/services/articles-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/services/articles-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Scrool/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Scrool/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Scrool/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/shared/globalStyles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/globalStyles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stores/basket.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/basket.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stores/models.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/models.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/widgets/Basket/AddToOrder/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Basket/AddToOrder/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/widgets/Basket/PlaceOrder/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Basket/PlaceOrder/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/widgets/Basket/TitleBasket/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Basket/TitleBasket/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/widgets/Footer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Footer/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/widgets/Header/HeaderAddressInput/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Header/HeaderAddressInput/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/widgets/Header/HeaderMobileBurger/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Header/HeaderMobileBurger/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widgets/Basket/ItemsBasket/BasketItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Basket/ItemsBasket/BasketItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widgets/Header/HeaderAddressInput/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Header/HeaderAddressInput.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widgets/Header/HeaderBasket/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Header/HeaderBasket.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widgets/Header/HeaderContacts/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Header/HeaderContacts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widgets/Header/HeaderMobileBurger/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Header/HeaderMobileBurger.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/widgets/Header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Header/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/widgets/Home/Contacts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Home/Contacts.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/widgets/Home/HomeHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Home/HomeHeader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/widgets/Home/OurCafe.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Home/OurCafe.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/widgets/Home/ShowCase.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Home/ShowCase.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/widgets/Home/ShowCaseCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Home/ShowCaseCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/widgets/Map/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Map/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/widgets/Product/CardProduct.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Product/CardProduct.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/widgets/RowMenu/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/RowMenu/index.tsx" afterDir="false" />
     </list>
@@ -107,11 +66,11 @@
       <recent name="D:\Proects\Proects 2024\Next\Food\src\widgets\Delivery" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Proects\Proects 2024\Next\Food\src\widgets\Header" />
       <recent name="D:\Proects\Proects 2024\Next\Food\src\app\product\[productId]" />
       <recent name="D:\Proects\Proects 2024\Next\Food" />
       <recent name="D:\Proects\Proects 2024\Next\Food\src\app" />
       <recent name="D:\Proects\Proects 2024\Next\Food\src" />
-      <recent name="D:\Proects\Proects 2024\Next\Food\db" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -142,7 +101,7 @@
       <workItem from="1712772169551" duration="5570000" />
       <workItem from="1712838655910" duration="15706000" />
       <workItem from="1712904717176" duration="46550000" />
-      <workItem from="1713110660438" duration="23445000" />
+      <workItem from="1713110660438" duration="36303000" />
     </task>
     <servers />
   </component>

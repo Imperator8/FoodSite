@@ -2,9 +2,9 @@
 
 import React, {useEffect, useRef} from "react";
 import Logo from "@/entities/Logo";
-import HeaderBasket from "@/widgets/Header/HeaderBasket";
+import {HeaderBasket} from "@/widgets/Header/HeaderBasket";
 import RowMenu from "@/widgets/RowMenu";
-import HeaderMobileBurger from "@/widgets/Header/HeaderMobileBurger";
+import {HeaderMobileBurger} from "@/widgets/Header/HeaderMobileBurger";
 import {styled} from "@/shared/globalStyles";
 import * as S from "@/widgets/Header/styles";
 

@@ -5,6 +5,7 @@ import {BasketItemProps} from "@/widgets/Basket/ItemsBasket/models";
 import {styled} from "@/shared/globalStyles";
 import {adaptiveValue} from "@/shared/globalStyleFunction";
 import {useBasket} from "@/stores/basket";
+import Link from "next/link";
 
 
 let BasketItem: FC<BasketItemProps> = ({item, ...props}) => {
@@ -37,7 +38,7 @@ let BasketItem: FC<BasketItemProps> = ({item, ...props}) => {
             <div className="BasketItem__contentWrapper">
 
                 <div className="BasketItem__descriptionWrapper">
-                    <div className="BasketItem__Title">{item.title}</div>
+                    <div className="BasketItem__Title"><Link href={item.url}>{item.title}</Link></div>
                     <div className="BasketItem__Description">{item.description}</div>
                 </div>
 

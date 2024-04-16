@@ -12,7 +12,7 @@ interface IndexInterface extends HTMLAttributes<HTMLButtonElement>{
 
 
 
-const Index: FC<IndexInterface> = ({...props}) => {
+const HeaderBasket: FC<IndexInterface> = ({...props}) => {
 
     useBasket((state) => state.articles)
     const articlesLen = useBasket((state) => state.calculateArticles)()
@@ -107,4 +107,4 @@ const ItemsWrapper = styled('div', {
 })
 
 
-export default Index;
+export {HeaderBasket}

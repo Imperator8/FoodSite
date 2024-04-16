@@ -7,18 +7,24 @@ import {ArticlesInterface} from "@/db/models/types";
 import Link from "next/link";
 import {adaptiveValue} from "@/shared/globalStyleFunction";
 import Image from "next/image"
+import {useRouter} from "next/navigation";
 
 export interface CardProductInterface {
     item: ArticlesInterface
 }
 
 let CardProduct: FC<CardProductInterface> = ({item, ...props}) => {
+    const router = useRouter();
+
+    function handleGoBack() {
+        router.back();
+    }
 
     return (
         <section className="CardProduct" {...props}>
             <div className="CardProduct__container container">
 
-                <Link className="CardProduct__backButton" href={`/#${item.type}`}>
+                <button className="CardProduct__backButton" onClick={handleGoBack} >
                     <div className="CardProduct__backArrow">
                         <svg width="7" height="12" viewBox="0 0 7 12" fill="white" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -27,7 +33,7 @@ let CardProduct: FC<CardProductInterface> = ({item, ...props}) => {
                     </div>
 
                     <span>Вернуться назад</span>
-                </Link>
+                </button>
 
                 <div className="CardProduct__Wrapper">
 

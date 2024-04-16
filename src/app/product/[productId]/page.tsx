@@ -30,7 +30,7 @@ const Index = async ({ params }: {params: {productId: string}}) => {
                 <Contacts/>
 
                 <Map style={{
-                    maxHeight: '540px',
+                    height: '540px !important',
                 }}/>
 
             </main>
