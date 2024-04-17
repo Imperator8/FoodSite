@@ -53,7 +53,7 @@ const setupStyle = globalCss({
     html: {
         height: "100%",
         minWidth: `${minWidth}px`,
-        scrollBehavior: "smooth !important"
+        scrollBehavior: "smooth !important",
     },
 
     main: {
@@ -125,7 +125,7 @@ const setupStyle = globalCss({
         minHeight: "100%",
         display: "flex",
         flexDirection: "column",
-        overflow: "hidden",
+        overflowX: "hidden",
 
         "> main": {
             flex: "1 1 auto"

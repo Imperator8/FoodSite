@@ -6,6 +6,8 @@ npm ci
 npm run build
 
 npm run start
+
+localhost:3000/api/initData - перейдите чтобы инициализировать проект
 ```
 
 ## Стек технологий
@@ -18,6 +20,8 @@ npm run start
     - Библиотека JavaScript для создания пользовательских интерфейсов.
 - [CSS-in-JS](https://cssinjs.org/)
     - Подход, позволяющий писать CSS внутри JavaScript, используется с [Stitches](https://stitches.dev/).
+- [Zustand](https://github.com/pmndrs/zustand)
+  - Простая и быстрая библиотека для управления состоянием в React приложениях.  
 
 ### Бэкенд:
 

@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="aa25f494-2a07-43c5-94f5-29d378f63b2a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/widgets/Header/HeaderBurgerDraw.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Header/HeaderBurgerDraw.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/widgets/Header/HeaderMobileBurger.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Header/HeaderMobileBurger.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/globalStyles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/globalStyles.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,21 +31,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/Proects/Proects 2024/Next/Food/src/db/dates",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "D:\\Proects\\Proects 2024\\Next\\Food\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Proects/Proects 2024/Next/Food/src/db/dates&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\Proects\\Proects 2024\\Next\\Food\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Proects\Proects 2024\Next\Food\src\db\dates" />
@@ -90,7 +90,8 @@
       <workItem from="1712772169551" duration="5570000" />
       <workItem from="1712838655910" duration="15706000" />
       <workItem from="1712904717176" duration="46550000" />
-      <workItem from="1713110660438" duration="42567000" />
+      <workItem from="1713110660438" duration="46295000" />
+      <workItem from="1713364240387" duration="240000" />
     </task>
     <servers />
   </component>
